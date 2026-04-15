@@ -10,7 +10,7 @@
             id="pokeballsList"
             numRows="1"
             translation="[200, 50]"
-            itemComponentName="pokeballssdk_PokeballItem"
+            itemComponentName="pokeballsdk_PokeballItem"
             itemSize="[952,0]"
             rowHeights="[208]"
             rowItemSize="[[208, 208]]"
