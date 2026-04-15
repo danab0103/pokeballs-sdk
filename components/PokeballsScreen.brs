@@ -8,10 +8,7 @@ sub init()
 end sub
 
 sub onBackgroundReady()
-    if m.backgroundPoster.loadStatus = "ready"
-        m.pokeballsList.visible = true
-        m.pokeballsList.setFocus(true)
-    end if
+    if m.backgroundPoster.loadStatus = "ready" then m.pokeballsList.visible = true
 end sub
 
 sub populatePokeballsRowList()

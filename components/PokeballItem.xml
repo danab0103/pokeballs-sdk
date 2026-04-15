@@ -1,8 +1,8 @@
 <component name="PokeballItem" extends="Group">
     <interface>
-        <field id="itemContent" type="node" onChange="onItemContentChanged"/>
-        <field id="focusPercent" type="float" onChange="onFocusStateChanged"/>
-        <field id="rowListHasFocus" type="boolean" onChange="onFocusStateChanged"/>
+        <field id="itemContent" type="node" onChange="onItemContentChanged" />
+        <field id="focusPercent" type="float" onChange="onFocusStateChanged" />
+        <field id="rowListHasFocus" type="boolean" onChange="onFocusStateChanged" />
     </interface>
 
     <children>

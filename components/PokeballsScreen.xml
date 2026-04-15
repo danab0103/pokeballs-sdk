@@ -1,4 +1,4 @@
-<component name="PokeballsScreen" extends="Group"> 
+<component name="PokeballsScreen" initialFocus="pokeballsList" extends="Group"> 
     <children>
         <Poster 
             id="background" 
