@@ -1,4 +1,4 @@
-# PokeballsSDK
+# PokeballSDK
 
 A Roku SceneGraph package that provides a ready-to-use pokeballs screen, built with BrightScript and distributed via ROPM.
 
@@ -14,16 +14,16 @@ Install via [ROPM](https://github.com/rokucommunity/ropm) in your Roku project:
 ```
 npm install ropm -g
 ```
-2. Install the `pokemon-sdk`
+2. Install the `pokeball-sdk`
 ``` 
-ropm install pokemon-sdk
+ropm install pokeball-sdk
 ```
 
 ## Usage
 
 Instantiate the component via BrightScript in your Roku project:
 ```
-screen = createObject("roSGNode", "pokemonsdk_PokeballsScreen")
+screen = createObject("roSGNode", "pokeballsdk_PokeballsScreen")
 m.top.appendChild(screen)
 screen.setFocus(true)
 ```
