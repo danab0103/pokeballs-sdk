@@ -22,7 +22,7 @@ function onKeyEvent(key as string, press as boolean) as boolean
 
     if press = true
         if key = "back"
-            closeScreen()
+            closeScreen(m.top)
             handled = true
         else if key = "down"
             handled = true
@@ -31,17 +31,3 @@ function onKeyEvent(key as string, press as boolean) as boolean
 
     return handled
 end function
-
-sub closeScreen()
-    parent = m.top.getParent()
-    parent.removeChild(m.top)
-    setFocusOnParentLastFocusedChild(parent)
-end sub
-
-sub setFocusOnParentLastFocusedChild(parent as object)
-    if parent.lastFocusedChild <> invalid
-        parent.lastFocusedChild.setFocus(true)
-
-        if parent.lastFocusedChild.subtype() = "CustomButton" then parent.lastFocusedChild.isCustomButtonFocused = true
-    end if
-end sub
