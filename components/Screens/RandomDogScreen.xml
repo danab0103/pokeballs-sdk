@@ -17,7 +17,7 @@
             layoutDirection="vert"
             itemSpacings="[30]">
 
-            <MaskGroup 
+            <MaskGroup
                 id="maskGroup"
                 maskSize="[600,600]"
                 maskUri="pkg:/images/white.png">
@@ -28,9 +28,10 @@
                     height="400" />
             </MaskGroup>
 
-            <Button
+            <CustomButton
                 id="backButton"
-                minWidth="100"
+                width="180"
+                height="44"
                 text="Back" />
         </LayoutGroup>
     </children>

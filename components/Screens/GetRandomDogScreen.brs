@@ -6,7 +6,7 @@ sub init()
 
     centerMainGroup()
 
-    m.getRandomDogButton.observeField("buttonSelected", "onGetRandomDogButtonSelected")
+    m.getRandomDogButton.observeField("isCustomButtonSelected", "onGetRandomDogButtonSelected")
 end sub
 
 sub centerMainGroup()
@@ -38,6 +38,9 @@ function onKeyEvent(key as string, press as boolean) as boolean
             closeScreen(m.top)
             handled = true
         else if key = "down"
+            handled = true
+        else if key = "OK"
+            m.getRandomDogButton.isCustomButtonSelected = true
             handled = true
         end if
     end if

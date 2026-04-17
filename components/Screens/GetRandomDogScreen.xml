@@ -15,9 +15,10 @@
             layoutDirection="vert"
             itemSpacings="[20]">
 
-            <Button
+            <CustomButton
                 id="getRandomDogButton"
-                minWidth="100"
+                width="180"
+                height="44"
                 text="Press me" />
 
             <Label

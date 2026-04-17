@@ -2,7 +2,7 @@ sub init()
     m.dogPoster = m.top.findNode("dogPoster")
     m.backButton = m.top.findNode("backButton")
 
-    m.backButton.observeField("buttonSelected", "onBackButtonSelected")
+    m.backButton.observeField("isCustomButtonSelected", "onBackButtonSelected")
 end sub
 
 sub onBackButtonSelected()
@@ -20,6 +20,9 @@ function onKeyEvent(key as string, press as boolean) as boolean
     if press = true
         if key = "back"
             closeScreen(m.top)
+            handled = true
+        else if key = "OK"
+            m.backButton.isCustomButtonSelected = true
             handled = true
         end if
     end if
