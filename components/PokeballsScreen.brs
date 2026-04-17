@@ -39,6 +39,8 @@ function onKeyEvent(key as string, press as boolean) as boolean
         if key = "back"
             closeScreen()
             handled = true
+        else if key = "down"
+            handled = true
         end if
     end if
 
