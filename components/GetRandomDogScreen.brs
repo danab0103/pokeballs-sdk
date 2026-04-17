@@ -14,7 +14,13 @@ sub centerMainGroup()
 end sub
 
 sub onGetRandomDogButtonSelected()
-    ? "DOG"
+    getDogDataTask = CreateObject("roSGNode", "GetDogDataTask")
+    getDogDataTask.observeField("dogContent", "onDogContentLoaded")
+    getDogDataTask.control = "RUN"
+end sub
+
+sub onDogContentLoaded()
+    ? "done"
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean
