@@ -3,5 +3,5 @@
         <field id="dogContent" type="node" />
     </interface>
 
-    <script type="text/brightscript" uri="pkg:/components/GetDogDataTask.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Task/GetDogDataTask.brs" />
 </component>

@@ -27,5 +27,5 @@
         </MaskGroup>
     </children>
 
-    <script type="text/brightscript" uri="pkg:/components/PokeballItem.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Item/PokeballItem.brs" />
 </component>

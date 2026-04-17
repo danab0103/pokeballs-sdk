@@ -35,6 +35,6 @@
         </LayoutGroup>
     </children>
 
-    <script type="text/brightscript" uri="pkg:/components/RandomDogScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Screens/RandomDogScreen.brs" />
     <script type="text/brightscript" uri="pkg:/components/NavigationHelper.brs" />
 </component>

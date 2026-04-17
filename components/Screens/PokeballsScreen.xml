@@ -20,6 +20,6 @@
             rowFocusAnimationStyle="fixedFocusWrap" />
     </children>
 
-    <script type="text/brightscript" uri="pkg:/components/PokeballsScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Screens/PokeballsScreen.brs" />
     <script type="text/brightscript" uri="pkg:/components/NavigationHelper.brs" />
 </component>
