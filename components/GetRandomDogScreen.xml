@@ -1,4 +1,8 @@
-<component name="GetRandomDogScreen" initialFocus="getRandomDogButton" extends="Group"> 
+<component name="GetRandomDogScreen" initialFocus="getRandomDogButton" extends="Group">
+    <interface>
+        <field id="lastFocusedChild" type="node" />
+    </interface>
+    
     <children>
         <Rectangle
             id="background"

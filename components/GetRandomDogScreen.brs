@@ -2,6 +2,8 @@ sub init()
     m.mainGroup = m.top.findNode("mainGroup")
     m.getRandomDogButton = m.top.findNode("getRandomDogButton")
 
+    m.top.lastFocusedChild = m.getRandomDogButton
+
     centerMainGroup()
 
     m.getRandomDogButton.observeField("buttonSelected", "onGetRandomDogButtonSelected")
@@ -14,13 +16,18 @@ sub centerMainGroup()
 end sub
 
 sub onGetRandomDogButtonSelected()
-    getDogDataTask = CreateObject("roSGNode", "GetDogDataTask")
-    getDogDataTask.observeField("dogContent", "onDogContentLoaded")
-    getDogDataTask.control = "RUN"
+    m.getDogDataTask = CreateObject("roSGNode", "GetDogDataTask")
+    m.getDogDataTask.observeField("dogContent", "navigateToRandomDogScreen")
+    m.getDogDataTask.control = "RUN"
 end sub
 
-sub onDogContentLoaded()
-    ? "done"
+sub navigateToRandomDogScreen()
+    screen = CreateObject("roSGNode", "RandomDogScreen")
+    
+    if m.getDogDataTask.dogContent <> invalid then screen.itemContent = m.getDogDataTask.dogContent
+
+    m.top.appendChild(screen)
+    screen.setFocus(true)
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean
