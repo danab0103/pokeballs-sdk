@@ -1,5 +1,4 @@
 sub init()
-    m.mainGroup = m.top.findNode("mainGroup")
     m.getRandomDogButton = m.top.findNode("getRandomDogButton")
 
     m.top.lastFocusedChild = m.getRandomDogButton

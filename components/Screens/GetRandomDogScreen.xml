@@ -15,7 +15,7 @@
             layoutDirection="vert"
             translation="[640, 340]"
             horizAlignment="center"
-            itemSpacings="[20]">
+            itemSpacings="[20]" >
 
             <CustomButton
                 id="getRandomDogButton"
