@@ -8,7 +8,7 @@
     <children>
         <Poster
             id="focusPoster"
-            uri="pkg:/images/white.png"
+            uri="pkg:/images/rounded_mask.png"
             blendColor="#90868d"
             width="208"
             height="208"

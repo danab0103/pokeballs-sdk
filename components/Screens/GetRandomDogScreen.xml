@@ -13,6 +13,8 @@
         <LayoutGroup
             id="mainGroup"
             layoutDirection="vert"
+            translation="[640, 340]"
+            horizAlignment="center"
             itemSpacings="[20]">
 
             <CustomButton

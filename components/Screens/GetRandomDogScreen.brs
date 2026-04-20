@@ -4,15 +4,7 @@ sub init()
 
     m.top.lastFocusedChild = m.getRandomDogButton
 
-    centerMainGroup()
-
     m.getRandomDogButton.observeField("isCustomButtonSelected", "onGetRandomDogButtonSelected")
-end sub
-
-sub centerMainGroup()
-    mainGroupWidth = m.mainGroup.boundingRect().width
-    mainGroupHeight = m.mainGroup.boundingRect().height
-    m.mainGroup.translation = [(1280 - mainGroupWidth) / 2, (720 - mainGroupHeight) / 2]
 end sub
 
 sub onGetRandomDogButtonSelected()

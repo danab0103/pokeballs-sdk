@@ -20,7 +20,7 @@
             <MaskGroup
                 id="maskGroup"
                 maskSize="[600,600]"
-                maskUri="pkg:/images/white.png">
+                maskUri="pkg:/images/rounded_mask.png">
 
                 <Poster
                     id="dogPoster"
