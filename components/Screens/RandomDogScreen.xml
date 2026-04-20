@@ -15,12 +15,12 @@
             translation="[650, 100]"
             horizAlignment="center"
             layoutDirection="vert"
-            itemSpacings="[30]">
+            itemSpacings="[30]" >
 
             <MaskGroup
                 id="maskGroup"
                 maskSize="[600,600]"
-                maskUri="pkg:/images/rounded_mask.png">
+                maskUri="pkg:/images/rounded_mask.png" >
 
                 <Poster
                     id="dogPoster"

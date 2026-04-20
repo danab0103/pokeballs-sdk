@@ -17,7 +17,7 @@
         <MaskGroup 
             id="maskGroup" 
             translation="[4, 4]"
-            maskUri="pkg:/images/white.png" >
+            maskUri="pkg:/images/rounded_mask.png" >
 
             <Poster
                 id="poster"
