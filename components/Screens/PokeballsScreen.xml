@@ -3,18 +3,18 @@
         <Poster 
             id="background" 
             uri="pkg:/images/laboratory.png" 
-            width="1280" 
-            height="720" />
+            width="1920" 
+            height="1080" />
 
         <RowList
             id="pokeballsList"
             numRows="1"
-            translation="[200, 50]"
+            translation="[300, 75]"
             itemComponentName="pokeballsdk_PokeballItem"
-            itemSize="[952,0]"
-            rowHeights="[208]"
-            rowItemSize="[[208, 208]]"
-            rowItemSpacing="[[30, 0]]"
+            itemSize="[1428,0]"
+            rowHeights="[312]"
+            rowItemSize="[[312, 312]]"
+            rowItemSpacing="[[45, 0]]"
             drawFocusFeedback="false"
             visible="false"
             rowFocusAnimationStyle="fixedFocusWrap" />

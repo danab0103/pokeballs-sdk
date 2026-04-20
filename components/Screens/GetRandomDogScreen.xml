@@ -7,20 +7,20 @@
         <Rectangle
             id="background"
             color="#000000"
-            width="1280"
-            height="720" />
+            width="1920"
+            height="1080" />
 
         <LayoutGroup
             id="mainGroup"
             layoutDirection="vert"
-            translation="[640, 340]"
+            translation="[960, 510]"
             horizAlignment="center"
-            itemSpacings="[20]" >
+            itemSpacings="[30]" >
 
             <CustomButton
                 id="getRandomDogButton"
-                width="180"
-                height="44"
+                width="270"
+                height="66"
                 text="Press me" />
 
             <Label

@@ -14,7 +14,7 @@ end sub
 
 sub navigateToRandomDogScreen()
     screen = CreateObject("roSGNode", "RandomDogScreen")
-    
+
     if m.getDogDataTask.dogContent <> invalid then screen.itemContent = m.getDogDataTask.dogContent
 
     m.top.appendChild(screen)
