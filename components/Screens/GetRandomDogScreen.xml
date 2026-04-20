@@ -1,0 +1,35 @@
+<component name="GetRandomDogScreen" initialFocus="getRandomDogButton" extends="Group">
+    <interface>
+        <field id="lastFocusedChild" type="node" />
+    </interface>
+    
+    <children>
+        <Rectangle
+            id="background"
+            color="#000000"
+            width="1920"
+            height="1080" />
+
+        <LayoutGroup
+            id="mainGroup"
+            layoutDirection="vert"
+            translation="[960, 510]"
+            horizAlignment="center"
+            itemSpacings="[30]" >
+
+            <CustomButton
+                id="getRandomDogButton"
+                width="270"
+                height="66"
+                text="Press me" />
+
+            <Label
+                id="label"
+                text="Get a random dog image"
+                color="#ffffff" />
+        </LayoutGroup>
+    </children>
+
+    <script type="text/brightscript" uri="pkg:/components/Screens/GetRandomDogScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/components/NavigationHelper.brs" />
+</component>

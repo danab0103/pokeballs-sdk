@@ -1,0 +1,7 @@
+<component name = "GetDogDataTask" extends = "Task" >
+    <interface>
+        <field id="dogContent" type="node" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/Task/GetDogDataTask.brs" />
+</component>

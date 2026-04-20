@@ -1,0 +1,40 @@
+<component name="RandomDogScreen" initialFocus="backButton" extends="Group"> 
+    <interface>
+        <field id="itemContent" type="node" onChange="onItemContentChanged" />
+    </interface>
+
+    <children>
+        <Rectangle
+            id="background"
+            color="#000000"
+            width="1920"
+            height="1080" />
+
+        <LayoutGroup
+            id="mainGroup"
+            translation="[975, 225]"
+            horizAlignment="center"
+            layoutDirection="vert"
+            itemSpacings="[45]" >
+
+            <MaskGroup
+                id="maskGroup"
+                maskUri="pkg:/images/dog_mask_$$RES$$.png"  >
+
+                <Poster
+                    id="dogPoster"
+                    width="450"
+                    height="450" />
+            </MaskGroup>
+
+            <CustomButton
+                id="backButton"
+                width="270"
+                height="66"
+                text="Back" />
+        </LayoutGroup>
+    </children>
+
+    <script type="text/brightscript" uri="pkg:/components/Screens/RandomDogScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/components/NavigationHelper.brs" />
+</component>
