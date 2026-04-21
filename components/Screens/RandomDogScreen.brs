@@ -3,6 +3,8 @@ sub init()
     m.backButton = m.top.findNode("backButton")
 
     m.backButton.observeField("isCustomButtonSelected", "onBackButtonSelected")
+
+    m.backButton.fontPath = getFontPath()
 end sub
 
 sub onBackButtonSelected()

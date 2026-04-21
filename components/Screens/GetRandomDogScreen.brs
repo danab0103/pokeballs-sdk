@@ -4,6 +4,8 @@ sub init()
     m.top.lastFocusedChild = m.getRandomDogButton
 
     m.getRandomDogButton.observeField("isCustomButtonSelected", "onGetRandomDogButtonSelected")
+
+    applyFont()
 end sub
 
 sub onGetRandomDogButtonSelected()
@@ -19,6 +21,11 @@ sub navigateToRandomDogScreen()
 
     m.top.appendChild(screen)
     screen.setFocus(true)
+end sub
+
+sub applyFont()
+    m.top.findNode("label").font.uri= getFontPath()
+    m.getRandomDogButton.fontPath = getFontPath()
 end sub
 
 function onKeyEvent(key as string, press as boolean) as boolean

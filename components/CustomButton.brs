@@ -16,3 +16,7 @@ end sub
 sub onTextChanged()
     m.label.text = m.top.text
 end sub
+
+sub onFontPathChanged()
+    m.label.font.uri = m.top.fontPath
+end sub

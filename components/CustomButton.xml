@@ -4,6 +4,7 @@
         <field id="width" type="float" onChange="onWidthChanged" />
         <field id="height" type="float" onChange="onHeightChanged" />
         <field id="text" type="string" onChange="onTextChanged" />
+        <field id="fontPath" type="string" onChange="onFontPathChanged" />
     </interface>
 
     <children>
