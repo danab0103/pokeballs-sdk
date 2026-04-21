@@ -36,5 +36,6 @@
     </children>
 
     <script type="text/brightscript" uri="pkg:/components/Screens/RandomDogScreen.brs" />
-    <script type="text/brightscript" uri="pkg:/components/NavigationHelper.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Helpers/NavigationHelper.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Helpers/FontHelper.brs" />
 </component>

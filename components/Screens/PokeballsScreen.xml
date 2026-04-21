@@ -21,5 +21,5 @@
     </children>
 
     <script type="text/brightscript" uri="pkg:/components/Screens/PokeballsScreen.brs" />
-    <script type="text/brightscript" uri="pkg:/components/NavigationHelper.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Helpers/NavigationHelper.brs" />
 </component>
